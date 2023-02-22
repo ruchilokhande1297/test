@@ -1,0 +1,119 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Garamond, serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-image: url("lab.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header #frame {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: 0px solid rgb(50, 39, 209);
+    outline-offset: -30px;
+}
+
+#header #content {
+    position: relative;
+    top: 80%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#header #content h1 {
+    font-size: 90px;
+    color: rgb(252, 252, 252);
+    text-shadow: 0 0 40px tan;
+    padding: 0;
+    margin: 0 0;
+    -webkit-text-stroke: 1px rgb(50, 39, 209);
+}
+
+#header #content h2 {
+    font-size: 30px;
+    color: rgb(50, 39, 209);
+    text-shadow: 0 0 40px tan;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+#header #content h3 {
+    font-size: 24px;
+    color: saddlebrown;
+    text-shadow: 0 0 40px tan;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+#header #contenet #links {
+    display: inline-block;
+}
+
+#header #content #links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+#header #content #links a div.button {
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    padding: 0;
+    background-color: rgb(100, 98, 219);
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 25px;
+    margin: 10px 20px;
+}
+
+#header #content #links a div.button:hover {
+    background-color: rgb(114, 114, 224);
+}
+
+
+@media screen and (max-width: 540px) {
+    #header #content h1 {
+        font-size: 68px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    #header #content h1 {
+        font-size: 68px;
+    }
+
+    #header #content h2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    #header #content h1 {
+        font-size: 52px;
+    }
+
+    #header #content h2 {
+        display: none;
+    }
+}
